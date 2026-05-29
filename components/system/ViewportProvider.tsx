@@ -1,6 +1,6 @@
 'use client';
-import { useEffect } from 'react';
-export function ViewportProvider({ children }: { children: React.ReactNode }) {
+import { useEffect, type ReactNode } from 'react';
+export function ViewportProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const root = document.documentElement;
     const update = () => {
